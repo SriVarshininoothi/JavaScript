@@ -23,12 +23,12 @@ console.log(d);
 
 //Datatypes
 let name="shinchan";
-let age = 21;
+let q = 21;
 let isstudent = true;
 let s;
 
 console.log(name);
-console.log(age);
+console.log(q);
 console.log(isstudent);
 
 console.log(s);
