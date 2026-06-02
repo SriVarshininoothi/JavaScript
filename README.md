@@ -22,3 +22,4 @@ Data Types in JavaScript
 ## What I Learned
 Today I started learning the basics of JavaScript and understood how it is used to make web pages interactive and dynamic.
 I learned about the history of JavaScript and how it became one of the most popular programming languages in web development.
+

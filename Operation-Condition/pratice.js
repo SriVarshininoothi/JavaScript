@@ -8,7 +8,7 @@ else {
     console.log("Not Ready");
 }
 
-//assignment
+//arithment
 
 let a = 10;
 let b = 20;
