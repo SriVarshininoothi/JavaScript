@@ -6,6 +6,6 @@ function bmi(weight,height){
     let bmi = weight/(height*height);
     return bmi.toFixed(2);
 }
-let weight= 54;
-let height = 1.53;
+let weight= 70;
+let height = 1.75;
 console.log("BMI= "+bmi(weight,height))
