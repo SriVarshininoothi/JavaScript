@@ -92,3 +92,48 @@ while(w<=4){
 
 //function
 
+function greet(){
+    console.log("Hello JavaScript");
+}
+greet(); 
+
+//add 
+
+function add(a,b){
+    return a+b;   
+}
+console.log(add(10,20));
+
+
+//square
+
+function sqaure(c){
+ 
+    return c**2;
+
+}
+console.log(sqaure(5));
+
+
+//odd even
+
+function oddeven(d){
+    if(d%2==0){
+        console.log("Even");
+    }else{
+        console.log("Odd");
+    }
+    
+}
+oddeven(6);
+
+//greater
+
+function findgreater(x,y){
+    if(x>y){
+        console.log(x);
+    }else{
+        console.log(y);
+    }
+}
+findgreater(8,9);
