@@ -137,3 +137,36 @@ function findgreater(x,y){
     }
 }
 findgreater(8,9);
+
+
+//array
+
+let Mobiles  = ["Vivo","Samsung","Motorola","Redmi","Google"];
+
+console.log(Mobiles[0]);
+console.log(Mobiles[1]);
+console.log(Mobiles[2]);
+console.log(Mobiles[3]);
+console.log(Mobiles[4]);
+
+console.log(Mobiles.length);
+
+//sum
+
+let arr =[1,2,3,4];
+let s = 0;
+for(let i=0;i<arr.length;i++){
+    s=s+arr[i];
+}
+console.log(s);
+
+
+let lar = [10, 50, 20, 70, 30];
+let min = lar[0];
+
+for(let j=0;j<lar.length;j++){
+    if(lar[j]> min){
+        min=lar[j];
+    }
+}
+console.log(min);
