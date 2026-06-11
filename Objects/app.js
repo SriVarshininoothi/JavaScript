@@ -56,3 +56,33 @@ let{name,age}=student;
 console.log(name);
 console.log(age);
 
+//spread operator
+
+//easy to copy or merge
+
+
+let employee = {
+    name:"Rahul",
+    age:32
+};
+
+let updateEmp = {
+    ...employee,
+    city:"Chennai"
+};
+
+console.log(updateEmp);
+
+//RestOperator
+//Remaining values into single object after extracting properties
+
+let E ={
+    name:"Durga",
+    age:23,
+    city:"Hyderabad",
+    state:"Telangana"
+};
+
+let {state,...others}= E;
+
+console.log(others);
