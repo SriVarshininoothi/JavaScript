@@ -39,3 +39,20 @@ let stud ={
 console.log(stud.address.city);
 
 
+//Object Methods
+
+let stu = {
+    name:"SriRam",
+    greet:function(){
+        console.log("Welcome");
+    }
+};
+
+stu.greet();
+
+//Destructuring
+
+let{name,age}=student;
+console.log(name);
+console.log(age);
+
