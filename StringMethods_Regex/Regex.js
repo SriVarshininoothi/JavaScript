@@ -1,13 +1,13 @@
 //Regular Expression
 
-// let email = prompt();
+let email = prompt();
 
-// if(email.includes("@")){
-//     console.log("Valid Email");
-// }
-// else{
-//     console.log("Invalid Email");
-// }
+if(email.includes("@")){
+    console.log("Valid Email");
+}
+else{
+    console.log("Invalid Email");
+}
  
 
 //Regular Expression = a pattern checking tool.
