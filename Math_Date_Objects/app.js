@@ -54,12 +54,3 @@ let day = new Date();
 
 console.log(day.getDate()+"/"+(day.getMonth()+1)+"/"+day.getFullYear());
 
-//age
-let birthyear = 2002;
-
-let currentyear = new Date().getFullYear();
-
-let age=  currentyear-birthyear;
-console.log(age);
-
-
