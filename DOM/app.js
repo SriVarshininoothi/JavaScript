@@ -23,5 +23,3 @@ function change(){
     message.style.color="brown";
 }
 
-
-
