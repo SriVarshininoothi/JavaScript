@@ -1,14 +1,27 @@
 
-let heading = document.getElementById("title");
+const heading = document.getElementById("title");
+heading.style.color="white";
+heading.style.backgroundColor="purple";
+heading.style.fontSize="30px";
+heading.style.padding="10px";
 
-heading.innerHTML = "Welcome to JavaScript";
-heading.style.color = "white"
-heading.style.backgroundColor="purple"
-heading.style.fontSize="40px"
+const subheading = document.querySelector("h3");
+subheading.style.color="Green";
 
+const para = document.querySelector(".defintion");
+para.style.color="pink";
 
-let btn = document.getElementById("btn");
+const q = document.querySelectorAll("p");
+q[0].style.color="red";
+q[1].innerText = "Dynamic Content = DOM"
+q[1].style.color="blue";
+
+let message = document.getElementById("message");
+
 function change(){
-    heading.innerHTML="This are topics";
-    btn.style.color="Green";
+    message.innerText="The DOM acts as an API (Application Programming Interface) that allows JavaScript to change the page after it has loaded.";
+    message.style.color="brown";
 }
+
+
+
