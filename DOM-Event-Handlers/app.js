@@ -36,7 +36,10 @@ inputF.oninput = function(event) {
     console.log("User name : "+event.target.value)
 
 }
+inputF.addEventListener("keydown", () => {
+    alert("Enter value");
 
+})
 const button = document.getElementById("btn");
 
 button.onclick= function() {
@@ -62,3 +65,23 @@ const btn = document.getElementById("themeBtn");
 btn.addEventListener("click", function(){
 document.body.classList.toggle("dark");
 });
+
+
+//counter
+let count =0;
+const display = document.getElementById("counter");
+
+display.addEventListener("click", () => {
+    count++;
+    display.textContent=count;
+});
+
+
+const reset = document.getElementById("reset");
+
+reset.addEventListener("click", () => {
+
+    count=0;
+    display.textContent=count;
+});
+
