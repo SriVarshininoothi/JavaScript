@@ -12,16 +12,19 @@ const result = document.getElementById("result");
 form.addEventListener("submit",(event) => {
 
     event.preventDefault();
-    
+
     const email = InputEmail.value.trim();
     const password = InputPassword.value.trim();
 
     if(email != "" && password != ""){
         result.textContent = "Login Successful!";
         result.style.color="Green";
+        result.style.fontSize="20px";
     }else{
-        result.textContent="Please fill in both fields!";
+        result.textContent="Please fill in the both fields!";
         result.style.color="Red";
+         result.style.fontSize="20px";
+         button.classList.remove("butt");
     }
 
 
@@ -61,7 +64,8 @@ InputPassword.addEventListener("input",function(){
 
 button.addEventListener("click",() => {
 
-    button.style.color="Green";
+   button.classList.add("butt");
+  
 
 
 });
