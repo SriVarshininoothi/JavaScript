@@ -1,0 +1,24 @@
+.login{
+    display: flex;
+   justify-content: center;
+   height: 100vh;
+   background-color: aquamarine;
+  padding: 32px;
+   
+}
+.box{
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+
+}
+
+.form{
+    width: 100%;
+   
+}
+.head{
+    text-align: center;
+}
