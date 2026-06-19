@@ -1,0 +1,11 @@
+.mini{
+
+    width: 200px;
+    height : 150px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+.dark{
+    background: black;
+    color: white;
+}
