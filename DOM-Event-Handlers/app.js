@@ -36,10 +36,17 @@ inputF.oninput = function(event) {
     console.log("User name : "+event.target.value)
 
 }
-inputF.addEventListener("keydown", () => {
-    alert("Enter value");
 
-})
+inputF.addEventListener("keydown", () => {
+    let currentvalue = inputF.value.trim();
+    if(currentvalue === ""){
+    alert("Enter value");
+    }else{
+        inputF.textContent="Success"
+    }
+
+});
+
 const button = document.getElementById("btn");
 
 button.onclick= function() {
