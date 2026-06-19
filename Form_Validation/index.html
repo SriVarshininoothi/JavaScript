@@ -5,18 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form_Validation</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <form id="myformid">
+    <!-- <form id="myformid">
 
         <label for="name">UserName</label>
-        <input type="text" id="name" placeholder="Enter username"/>
-
+        <input type="text" id="name" placeholder="Enter username" />
+        <br><br>
         <button id="button" type="submit">Submit</button>
         <p id="result"></p>
     </form>
 
-    <script src="./app.js"></script>
+    <script src="./app.js"></script> -->
+
+    <div class="login">
+        
+        <div class="box">
+
+      <h2 class="head">Login</h2>
+        <form id="FormSubmit" class="form">
+            
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email...">
+            <p id="emailError"></p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"  placeholder="Enter Your password...">
+            <p id="passError"></p>
+            
+            <button id="button" type="submit">Login</button>
+            <p id="result"></p>
+
+
+    </form>
+      </div>
+    </div>
+    <script src="./Login_Validation.js"></script>
 </body>
+
 </html>
