@@ -13,69 +13,111 @@ let courseError = document.getElementById("courseError");
 //form
 let form = document.getElementById("myForm");
 
-
-
 //regex
 let nameRegex = /^[A-Za-z\s]+$/;
 let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let phoneRegex = /^[0-9]{10}$/;
 let courseRegex = /^[A-Za-z\s]+$/;
 
-form.addEventListener("submit", (e) => {
+//Array
 
+let students = [];
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const course = document.getElementById("course").value;
-    let button = document.getElementById("button");
-
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    //name validation
-    if (!nameRegex.test(name)) {
+    //input
+
+    let nameInput = name.value.trim();
+    let emailInput = email.value.trim();
+    let phoneInput = phone.value.trim();
+    let courseInput = course.value.trim();
+
+    // Name Validation
+    if (!nameRegex.test(nameInput)) {
         nameError.textContent = "Enter Valid Name";
-        nameError.style.color = "Red";
+        nameError.style.color = "red";
     } else {
         nameError.textContent = "";
     }
-    //email Validation
-    if (!emailRegex.test(email)) {
-        emailError.textContent = "Enter Valid email";
-        emailError.style.color = "Red";
+
+    // Email Validation
+    if (!emailRegex.test(emailInput)) {
+        emailError.textContent = "Enter Valid Email";
+        emailError.style.color = "red";
     } else {
         emailError.textContent = "";
     }
-    //phone validation
-    if (!phoneRegex.test(phone)) {
-        phoneError.textContent = "Enter valid number contains 10 digits";
-        phoneError.style.color = "Red";
+
+    // Phone Validation
+    if (!phoneRegex.test(phoneInput)) {
+        phoneError.textContent = "Enter Valid 10 Digit Number";
+        phoneError.style.color = "red";
     } else {
         phoneError.textContent = "";
     }
 
-    //course validation
-    if (!courseRegex.test(course)) {
-        courseError.textContent = "Enter Valid course";
-        courseError.style.color = "Red";
+    // Course Validation
+    if (!courseRegex.test(courseInput)) {
+        courseError.textContent = "Enter Valid Course";
+        courseError.style.color = "red";
     } else {
         courseError.textContent = "";
     }
 
-   
 
-     button.addEventListener("change",function(){
+    //check all validations
 
-    let table = document.getElementById("table");
+    if(
+        nameRegex.test(nameInput) &&
+        emailRegex.test(emailInput) &&
+        phoneRegex.test(phoneInput)&&
+        courseRegex.test(courseInput) 
     
-    button.style.color="blue";
     
+    ){
 
+        //object
+        let student = {
+            name:nameInput,
+            email:emailInput,
+            phone:phoneInput,
+            course:courseInput
 
+        };
+
+        students.push(student);
+        console.log(students);
         
-    });
+        displayStudents();
 
+        form.reset();
 
+    }
 });
 
+
+
+function displayStudents(){
+
+    let table = document.getElementById("studentTable");
+
+    table.innerHTML= "";
+
+    for(let i=0;i<students.length;i++){
+
+        table.innerHTML += 
+        
+        `
+            <tr>
+            <td>${students[i].name}</td>
+            <td>${students[i].email}</td>
+            <td>${students[i].phone}</td>
+            <td>${students[i].course}</td>
+
+            </tr>
+
+        `;
+    }
+}
 
