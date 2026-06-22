@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    margin-top: 100px;
+    transform:0.9s;
+}
+
+
+.dark{
+    background-color: black;
+    color: white;
+    
+}
