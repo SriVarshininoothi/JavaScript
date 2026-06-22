@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_Management_System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <h1 style="font-size: 30px; margin-bottom:25px; text-align: center;">Student Management System</h1>
+        <form id="myForm">
+
+            <div class="box">
+                <h3 style="margin-bottom: 20px; font-size: 22px;">Student Details</h3>
+
+                <div style="margin-top: 12px; font-size: 20px;">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter the user Name" class="form-control">
+                    <p id="nameError"></p>
+                </div>
+                <div style="margin-top: 12px; font-size: 20px;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter the user Email" class="form-control">
+                    <p id="emailError"></p>
+                </div>
+
+                <div style="margin-top: 12px; font-size: 20px;">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" placeholder="Enter the user mobile Number" class="form-control">
+                    <p id="phoneError"></p>
+                </div>
+
+                <div style="margin-top: 12px; font-size: 20px;">
+                    <label>Course</label>
+                    <input type="text" id="course" placeholder="Enter the course Name" class="form-control">
+                    <p id="courseError"></p>
+                </div>
+
+
+                <div class="btn" style="margin-top: 12px;text-align: center;">
+                    <button id="button" class="but">Add Student</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <section class="table" id="table" >
+        <table>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Course</th>
+
+
+            
+
+        </table>
+
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
