@@ -31,9 +31,10 @@ console.log(p);
 const note = document.getElementById("note");
 const save = document.getElementById("save");
 
-
 save.addEventListener("click",()=>{
     localStorage.setItem(
         "note",note.value
     );
 });
+
+console.log(localStorage.getItem("note"));
