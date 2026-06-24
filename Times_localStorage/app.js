@@ -27,19 +27,27 @@ button.addEventListener("click", function () {
 // },1000);
 
 
-let timer = setInterval(function () {
-    console.log("Running");
-}, 1000);
+// let timer = setInterval(function () {
+//     console.log("Running");
+// }, 1000);
 
-setTimeout(function () {
-    clearInterval(timer);
-    console.log("Stop");
+// setTimeout(function () {
+//     clearInterval(timer);
+//     console.log("Stop");
 
-}, 5000);
+// }, 5000);
 
 //auto
 
 let count=0;
 
+let time = setInterval(function(){
 
+    count++;
+    console.log(count);
+    if(count==5){
+        clearInterval(time);
+    }
+
+},1000);
 
