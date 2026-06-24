@@ -39,15 +39,29 @@ button.addEventListener("click", function () {
 
 //auto
 
-let count=0;
+// let count=0;
 
-let time = setInterval(function(){
+// let time = setInterval(function(){
 
-    count++;
-    console.log(count);
-    if(count==5){
-        clearInterval(time);
+//     count++;
+//     console.log(count);
+//     if(count==5){
+//         clearInterval(time);
+//     }
+
+// },1000);
+
+//countdown timer
+
+let counttime = 10;
+
+let counttimer = setInterval(function(){
+
+    console.log(counttime);
+    counttime--;
+    if(counttime<0){
+        clearInterval(counttimer);
     }
 
-},1000);
 
+},1000);
