@@ -74,8 +74,8 @@ if(!phoneRegex.test(phone)){
 if(isValid){
     result.textContent ="Register Successful!";
     result.style.color="Green";
-    result.style.fontSize="20px";
-    form.reset();
+    result.style.fontSize="22px";
+   
 
 
 }else{
@@ -87,3 +87,5 @@ if(isValid){
 }
 
 });
+
+

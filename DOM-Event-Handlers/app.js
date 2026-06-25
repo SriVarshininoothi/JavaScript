@@ -1,4 +1,3 @@
-
 const box = document.getElementById("container");
 
 box.innerHTML = "<h4> Enter Element </h4>"
@@ -13,7 +12,6 @@ let product = {
     }
 }
 
-
 box.innerHTML = `<h2> ${product.name}</h2>`
 box.innerHTML = `<h3> ${product.address.city} </h3>`
 box.textContent = "Hello world"
@@ -21,23 +19,19 @@ box.textContent = "Hello world"
 //Style Manipulation
 
 const title = document.getElementById("title");
-
 title.style.color="pink";
 title.style.backgroundColor = "purple";
 title.style.padding ="20px";
 
 //classlist
-
 document.body.classList.add("white");
 
 box.classList.add("active");
 box.classList.remove("active");
-
 box.classList.toggle("active"); //switches bg color
 box.classList.contains("active");
 
 //event
-
 const inputF = document.getElementById("text");
 inputF.oninput = function(event) {
     console.log("User name : "+event.target.value)
@@ -60,8 +54,6 @@ button.onclick= function() {
     alert("Hello");
 }
 
-
-
 button.onmouseover=function(){
     button.style.color="red";
 }
@@ -74,15 +66,11 @@ button.addEventListener("click" , function(){
 console.log("Clicked");
 });
 
-
-
 const btn = document.getElementById("themeBtn");
 
 btn.addEventListener("click", function(){
 document.body.classList.toggle("dark");
 });
-
-
 
 //counter
 

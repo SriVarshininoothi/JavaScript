@@ -9,7 +9,6 @@ else{
     console.log("Invalid Email");
 }
  
-
 //Regular Expression = a pattern checking tool.
 
 let pattern = /^[0-9]+$/;
@@ -28,7 +27,10 @@ if(password.length>=8){
     console.log("Weak Password");
 }
 
-//Advanced
+
+
+
+//Advanced pattern
 
 let passwordpattern = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
 console.log(passwordpattern.test("shinchan12"));

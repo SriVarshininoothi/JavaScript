@@ -1,3 +1,4 @@
+
 let product = {
     name:"Laptop",
     price:50000,
@@ -5,13 +6,10 @@ let product = {
 };
 
 //add a new 
-
 product.model="Pavilion";
-
 console.log(product);
 
 //upadte price
-
 product.price=67000;
 console.log(product);
 

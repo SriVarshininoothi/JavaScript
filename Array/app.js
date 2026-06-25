@@ -1,39 +1,28 @@
 //Array
-
 let names = ["Shinchan","Heidi","Doremon","Nobitha"];
-
 console.log(names[0]);
-
 console.log(names[1]);
-
 console.log(names[2]);
-
 console.log(names[3]);
 
 //push() - add at last
-
 names.push("Kazama");
 console.log(names);
 
 //pop - remove at last
-
 names.pop();
 console.log(names);
 
 //unshift - Add at first/start
-
 names.unshift("Jackiechan");
 console.log(names);
 
 //shift - remove at start
-
 names.shift();
 console.log(names);
-
 //length
 
 console.log("Length of names: "+names.length);
-
 //splice() - Modify the original array
 //array.splice(start,deletecount,items)
 

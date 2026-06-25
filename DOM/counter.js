@@ -13,11 +13,10 @@ function increment() {
     value.style.color = "Green";
     value.style.fontWeight = "bold";
 
-
 }
 
 function decrement() {
-    
+
     count = count - 1;
     value.innerText = count;
     value.style.color = "Red";

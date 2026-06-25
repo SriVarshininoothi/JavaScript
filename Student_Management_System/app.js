@@ -1,4 +1,3 @@
-
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
@@ -20,14 +19,12 @@ let phoneRegex = /^[0-9]{10}$/;
 let courseRegex = /^[A-Za-z\s]+$/;
 
 //Array
-
 let students = [];
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     //input
-
     let nameInput = name.value.trim();
     let emailInput = email.value.trim();
     let phoneInput = phone.value.trim();
@@ -65,7 +62,6 @@ form.addEventListener("submit", function (e) {
         courseError.textContent = "";
     }
 
-
     //check all validations
 
     if(
@@ -74,9 +70,7 @@ form.addEventListener("submit", function (e) {
         phoneRegex.test(phoneInput)&&
         courseRegex.test(courseInput) 
     
-    
     ){
-
         //object
         let student = {
             name:nameInput,
@@ -85,36 +79,26 @@ form.addEventListener("submit", function (e) {
             course:courseInput
 
         };
-
         students.push(student);
         console.log(students);
-        
-        displayStudents();
 
+        displayStudents();
         form.reset();
 
     }
 });
 
-
-
 function displayStudents(){
-
     let table = document.getElementById("studentTable");
-
     table.innerHTML= "";
-
     for(let i=0;i<students.length;i++){
-
         table.innerHTML += 
-        
         `
             <tr>
             <td>${students[i].name}</td>
             <td>${students[i].email}</td>
             <td>${students[i].phone}</td>
             <td>${students[i].course}</td>
-
             </tr>
 
         `;

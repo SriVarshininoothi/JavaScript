@@ -1,8 +1,8 @@
 //time
 
-// setTimeout(function(){
-//     console.log("Welcome Students");
-// },2000);
+setTimeout(function(){
+    console.log("Welcome Students");
+},2000);
 
 
 let button = document.getElementById("btn");
@@ -22,34 +22,34 @@ button.addEventListener("click", function () {
 
 
 
-// setInterval(function(){
-//     console.log("Running...");
-// },1000);
+setInterval(function(){
+    console.log("Running...");
+},1000);
 
 
-// let timer = setInterval(function () {
-//     console.log("Running");
-// }, 1000);
+let timer = setInterval(function () {
+    console.log("Running");
+}, 1000);
 
-// setTimeout(function () {
-//     clearInterval(timer);
-//     console.log("Stop");
+setTimeout(function () {
+    clearInterval(timer);
+    console.log("Stop");
 
-// }, 5000);
+}, 5000);
 
 //auto
 
-// let count=0;
+let count=0;
 
-// let time = setInterval(function(){
+let time = setInterval(function(){
 
-//     count++;
-//     console.log(count);
-//     if(count==5){
-//         clearInterval(time);
-//     }
+    count++;
+    console.log(count);
+    if(count==5){
+        clearInterval(time);
+    }
 
-// },1000);
+},1000);
 
 //countdown timer
 

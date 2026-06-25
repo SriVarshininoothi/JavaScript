@@ -13,3 +13,4 @@ let daysRemaining = Math.ceil(milisecondsRemaining/(1000*60*60*24)); //convert m
 console.log("Birthday:",birthday.toDateString()); // Convert Date to String 
 console.log("Today:",currentDate.toDateString());
 console.log("Days Remainig: ",daysRemaining);
+

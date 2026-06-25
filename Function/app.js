@@ -30,14 +30,20 @@ console.log(result);
 
 //arrow 
 
-const greet= ()=>{
+const great= ()=>{
     console.log("Hi");
 }
 
-const add = (a,b)=>{
+const a = (a,b)=>{
     return a+b;
 }
 
-const add =(a,b)=> a+b;
+const d =(a,b)=> a+b;
 
 
+//global scope
+let marks= 12;
+function score(){
+console.log(marks);
+}
+score();

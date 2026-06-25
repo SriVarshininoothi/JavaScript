@@ -83,3 +83,12 @@ let {state,...others}= E;
 
 console.log(others);
 
+//object
+
+let fruits = new Object();
+fruits.apple = "red";
+fruits.mango  = "yellow";
+console.log(fruits);
+
+document.write(fruits.apple);
+

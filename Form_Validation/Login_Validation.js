@@ -29,8 +29,6 @@ form.addEventListener("submit",(event) => {
 
 
 
-});
-
 //email validate
 
 InputEmail.addEventListener("input",function(){
@@ -70,3 +68,5 @@ button.addEventListener("click",() => {
 
 });
 
+
+});

@@ -20,14 +20,14 @@ console.log(Math.round(3.4));
 
 //dice
 
-let dice = Math.floor(Math.random()*6 + 1);
+let dice = Math.floor(Math.random() * 6 + 1);
 console.log(dice);
 
 //dice game
 
-for(let i=0;i<=10;i++){
-    let di = Math.floor(Math.random()*6 + 1);
-    console.log("Dices Game: "+di);
+for (let i = 0; i <= 10; i++) {
+    let di = Math.floor(Math.random() * 6 + 1);
+    console.log("Dices Game: " + di);
 }
 
 
@@ -52,5 +52,5 @@ console.log(today.getSeconds());
 
 let day = new Date();
 
-console.log(day.getDate()+"/"+(day.getMonth()+1)+"/"+day.getFullYear());
+console.log(day.getDate() + "/" + (day.getMonth() + 1) + "/" + day.getFullYear());
 
