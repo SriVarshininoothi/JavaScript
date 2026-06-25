@@ -74,4 +74,10 @@ setTimeout(function () {
  //error
 
  console.log(userName);
- 
+
+
+ try{
+    console.log(userName);
+ }catch(error){
+    console.log("User not found");
+ }
