@@ -72,3 +72,6 @@ setTimeout(function () {
  console.log("End");
 
  //error
+
+ console.log(userName);
+ 
