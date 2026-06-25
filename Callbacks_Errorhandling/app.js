@@ -24,60 +24,73 @@ setTimeout(function () {
 
 }, 1000);
 
- //Dom events and callbacks
+//Dom events and callbacks
 
- const button = document.getElementById("btn");
+const button = document.getElementById("btn");
 
- button.addEventListener("click", function(){
+button.addEventListener("click", function () {
 
     document.getElementById("result")
-    .textContent = "Button Clicked";
+        .textContent = "Button Clicked";
 
- });
-
-
- //callstack
-
- console.log("A");
- console.log("B");
- console.log("C");
+});
 
 
- //Web APIs and  callback queue
+//callstack
 
- console.log("Start");
+console.log("A");
+console.log("B");
+console.log("C");
 
- setTimeout(() => {
+
+//Web APIs and  callback queue
+
+console.log("Start");
+
+setTimeout(() => {
 
     console.log("Timer");
-    
- }, 3000);
 
- console.log("End");
+}, 3000);
+
+console.log("End");
 
 
- //event loop and microtask queue
+//event loop and microtask queue
 
- console.log("Start");
+console.log("Start");
 
- setTimeout(() => {
+setTimeout(() => {
     console.log("timer");
- },0);
+}, 0);
 
- Promise.resolve()
- .then(() => {
-    console.log("Promise");
+Promise.resolve()
+    .then(() => {
+        console.log("Promise");
 
- });
- console.log("End");
+    });
+console.log("End");
 
- //error
+//error
 
- console.log(userName);
+//  console.log(userName);
 
 
- try{
+try {
     console.log(userName);
- }catch(error){
+} catch (error) {
     console.log("User not found");
- }
+}
+
+
+//finally
+finally {
+    console.log("Always Run");
+}
+
+
+//throw
+
+if (age < 18) {
+    throw new Error("Not Eligible");
+}
