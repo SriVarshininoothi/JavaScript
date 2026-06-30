@@ -1,35 +1,13 @@
 
-// const person = {
+const person = {
 
-//     name:"varshini",
-//     greet() {
-//         console.log(this);
-//     }
+    name:"varshini",
+    greet() {
+        console.log(this);
+    }
 
-// }
-// person.greet();
-
-
-
-// //2 same objects
-
-// const person1 = {
-//     name:"harinath"
-// }
-
-// const person2 = {
-//     name:"Kalyan"
-
-// }
-
-// function greet(){
-
-//     console.log("  Good morning " + this.name);
-
-
-//   }
-// greet()
-
+}
+person.greet();
 
 const emp1 = {
     name: "Kiranmai"
@@ -54,22 +32,21 @@ function introduce(city){
 introduce.call(student,"Hyderabad")
 
 
-//apply() = Same Bike,Different Packing
-//call() = One by One
-//apply() = Whole bag
+// apply() = Same Bike,Different Packing
+// call() = One by One
+// apply() = Whole bag
 
-// const stu = {name:"Kalyani"};
-// let info = ["Hyderabad","Developer"];
+const stu = {name:"Kalyani"};
+let info = ["Hyderabad","Developer"];
 
 
-// function introduce(city,role){
-//     console.log(this.name+" "+ city+" "+role);
+function introduce(city,role){
+    console.log(this.name+" "+ city+" "+role);
 
-// }
-// introduce.apply(stu,info)
+}
+introduce.apply(stu,info)
 
 const fruits ={
-
 
     name:"Orange"
 };
@@ -79,8 +56,6 @@ function snacks(color,kgs,tr){
 }
 
 snacks.call(fruits,"Orange",3,4);
-
-
 
 //bind() = Borrow and Use Later
 
@@ -103,8 +78,6 @@ const value = wish.bind(person1);
 value()
 
 
-
-
 //btn
 const btn = document.getElementById("btn");
 
@@ -116,7 +89,7 @@ const user = {
     }
 };
 
-// btn.addEventListener("click",user.showName);
+btn.addEventListener("click",user.showName);
 
 btn.addEventListener("click", 
     user.showName.bind(user)
