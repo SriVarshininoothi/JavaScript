@@ -1,6 +1,4 @@
-
 //lexical Scope
-
 function outer() {
     const name = "Shinchan";
 
@@ -11,11 +9,8 @@ function outer() {
 
     inner();
 }
-
 outer(); 
-
 //Closure
-
 function createCounter() {
     let count = 0; 
 
@@ -24,10 +19,7 @@ function createCounter() {
         console.log(`Current count: ${count}`);
     };
 }
-
-
 const counter = createCounter();
-
 counter(); 
 counter(); 
 counter(); 
@@ -54,6 +46,5 @@ function greet(name, callback) {
 function sayGoodbye() {
     console.log("Goodbye!");
 }
-
 
 greet("Alice", sayGoodbye);
