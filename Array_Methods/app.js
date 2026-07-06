@@ -22,3 +22,13 @@ const names = products.map(
 console.log(names);  
 
 
+//filter
+
+let marks = [20,50,60,35,80,90];
+
+let pass = marks
+    .filter((mark)=> mark>=35)
+    .sort((a,b) => a-b);
+
+
+console.log(pass);
