@@ -37,3 +37,22 @@ console.log(pass);
 const pri = products
     .filter((a)=> a.price>=3000);
     console.log(pri);
+
+
+//reduce
+
+const price = [100,200,300];
+
+const total = price.
+        reduce(
+
+            (inital,acc)=> inital+acc
+
+        );
+
+console.log(total);
+
+
+const g = products
+        .reduce((sum,product) => sum+product.price,0);
+console.log(g); 
