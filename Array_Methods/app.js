@@ -32,3 +32,8 @@ let pass = marks
 
 
 console.log(pass);
+
+
+const pri = products
+    .filter((a)=> a.price>=3000);
+    console.log(pri);
