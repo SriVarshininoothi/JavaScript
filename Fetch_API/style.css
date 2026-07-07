@@ -1,3 +1,4 @@
+
 #productbucket{
 
     display: flex;
@@ -5,7 +6,6 @@
     gap:30px;
     justify-content: center;
 }
-
 
 .card{
     
@@ -15,8 +15,13 @@
     border: 1px solid rgb(154, 198, 161);
     border-radius: 10px;
     
+    
 }
 
+.card:hover{
+    background-color: rgb(215, 236, 236);
+   
+}
 
 .card img{
     width: 100%;
@@ -45,4 +50,9 @@
     padding: 10px 20px;
     font-size: 20px;
     
+}
+
+.btn:hover{
+    background-color: rgb(200, 68, 68);
+    color: white;
 }
