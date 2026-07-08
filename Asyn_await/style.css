@@ -1,0 +1,54 @@
+#cartbucket {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.card {
+
+    border: 1px solid;
+    border-radius: 12px;
+    border-color: rgb(42, 65, 135);
+    padding: 12px;
+    width:320px;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+}
+
+.card h2 {
+
+    text-align: center;
+
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Keeps the product image from stretching distortively */
+    margin-bottom: 12px;
+}
+
+.bg {
+    background-color: rgb(197, 218, 218);
+    padding: 12px;
+    height: 100%;
+
+}
+
+.btn {
+
+    color: white;
+    background-color: rgb(111, 105, 158);
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    width: 100%;
+
+
+}
