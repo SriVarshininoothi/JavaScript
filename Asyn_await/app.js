@@ -13,25 +13,25 @@ const container = document.getElementById("cartbucket");
 
 async function getProducts() {
 
-    let response = await fetch("https://dummyjson.com/products");
+    let response = await fetch("https://dummyjson.com/recipes");
 
     const data = await response.json();
 
     //console.log(data.carts);
 
-    data.products.map((product) => {
+    data.recipes.map((product) => {
 
         container.innerHTML += `
         
         <div class = "card">
+        <img src ="${product.image}"/> 
+        <div class="bg">
 
-        <h2> ${product.title}</h2>
-        <img src ="${product.thumbnail}"/> 
-        <button class="btn">${product.price}</button>
-
+            <h2> ${product.name}</h2>
+            <span class="btn"> ★★★★ ${product.rating} </span>
+            </div>
         </div>
-        
-        
+
         `;
 
     });
