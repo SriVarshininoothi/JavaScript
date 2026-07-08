@@ -88,6 +88,7 @@
 .card h2 {
     color: #1c1917;
     text-align: center;
+    font-size: 30px;
 }
 
 .btn {
@@ -100,5 +101,5 @@
     width: max-content;
     display: inline-flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 20px;
 }
