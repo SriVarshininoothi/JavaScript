@@ -78,3 +78,16 @@ async function updateUser() {
 updateUser();
 
 
+//delete
+
+async function deleteUser() {
+
+    let response = await fetch("https://jsonplaceholder.typicode.com/users/1",
+        {
+            method: "DELETE"
+        }
+    );
+
+    console.log(response.status);
+}
+deleteUser();
