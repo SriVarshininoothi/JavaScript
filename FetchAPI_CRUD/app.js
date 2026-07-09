@@ -15,3 +15,35 @@ async function getUsers() {
 }
 
 getUsers();
+
+
+
+
+//post
+
+async function createUser() {
+
+    let user = {
+        name: "Shinchan",
+        email: "shinchan@gmail.com"
+    };
+
+    let response = await fetch(
+        "https://jsonplaceholder.typicode.com/users",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(user) //server accept in string 
+        }
+
+    );
+
+    let data = await response.json();
+
+    console.log(data);
+
+}
+
+createUser();
