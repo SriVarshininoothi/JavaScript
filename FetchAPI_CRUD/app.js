@@ -47,3 +47,34 @@ async function createUser() {
 }
 
 createUser();
+
+//put
+
+async function updateUser() {
+
+    let user = {
+        id: 1,
+        name: "Srivarshini",
+        email: "sri@gmail.com"
+    };
+
+    let response = await fetch("https://jsonplaceholder.typicode.com/users/1",
+
+        {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(user) // convert into string 
+
+        }
+    );
+
+    let data = await response.json(); // convert into object
+    console.log(data);
+
+
+}
+updateUser();
+
+
